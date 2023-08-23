@@ -1,0 +1,10 @@
+apiVersion: clustertemplate.openshift.io/v1alpha1
+kind: ClusterTemplateInstance
+metadata:
+  namespace: hypershift-instances
+  name: instance
+spec:
+  clusterTemplateRef: hypershift-template
+  parameters:    
+    - name: infraEnv
+      value: infraenv

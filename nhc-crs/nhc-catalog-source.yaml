@@ -1,0 +1,9 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: medik8s-upstream
+  namespace: openshift-marketplace
+spec:
+  sourceType: grpc
+  image: quay.io/medik8s/nhc-snr-index:v9.9.9-ci
+
